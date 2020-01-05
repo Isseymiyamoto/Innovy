@@ -38,17 +38,9 @@ class NewsListCell: UITableViewCell, GADAdLoaderDelegate, GADUnifiedNativeAdLoad
     /// 記事画像View
     @IBOutlet weak var articleImageBackView: UIView!
     /// 記事画像（一覧先頭用）
-    @IBOutlet var topArticleImageView: UIImageView! {
-        didSet {
-            topArticleImageView.sd_imageIndicator = SDWebImageProgressIndicator.default
-        }
-    }
+    @IBOutlet var topArticleImageView: UIImageView!
     /// 記事画像
-    @IBOutlet var articleImageView: UIImageView! {
-        didSet {
-            articleImageView.sd_imageIndicator = SDWebImageProgressIndicator.default
-        }
-    }
+    @IBOutlet var articleImageView: UIImageView!
     
     var viewModel: NewsListCellViewModel? {
         didSet {
