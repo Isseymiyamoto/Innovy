@@ -11,9 +11,4 @@ import UIKit
 class NewsTopTabBarController: UITabBarController {
     /// ViewModel
     var viewModel = NewsTopTabBarViewModel()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 }
